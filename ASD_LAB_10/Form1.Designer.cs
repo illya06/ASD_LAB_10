@@ -38,7 +38,7 @@
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(112, 215);
+            this.start.Location = new System.Drawing.Point(15, 100);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(167, 37);
             this.start.TabIndex = 1;
@@ -48,14 +48,14 @@
             // 
             // pattern
             // 
-            this.pattern.Location = new System.Drawing.Point(179, 100);
+            this.pattern.Location = new System.Drawing.Point(82, 24);
             this.pattern.Name = "pattern";
             this.pattern.Size = new System.Drawing.Size(100, 20);
             this.pattern.TabIndex = 2;
             // 
             // target
             // 
-            this.target.Location = new System.Drawing.Point(179, 153);
+            this.target.Location = new System.Drawing.Point(82, 60);
             this.target.Name = "target";
             this.target.Size = new System.Drawing.Size(100, 20);
             this.target.TabIndex = 3;
@@ -63,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 103);
+            this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 4;
@@ -72,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 156);
+            this.label2.Location = new System.Drawing.Point(19, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 5;
@@ -81,9 +81,9 @@
             // result
             // 
             this.result.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.result.Location = new System.Drawing.Point(351, 100);
+            this.result.Location = new System.Drawing.Point(208, 24);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(171, 151);
+            this.result.Size = new System.Drawing.Size(217, 113);
             this.result.TabIndex = 6;
             this.result.Text = "";
             // 
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(444, 160);
             this.Controls.Add(this.result);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -99,6 +99,7 @@
             this.Controls.Add(this.pattern);
             this.Controls.Add(this.start);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
