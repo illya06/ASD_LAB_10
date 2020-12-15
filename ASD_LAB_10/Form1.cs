@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace ASD_LAB_10
 {
+    
     public partial class Form1 : Form
     {
         public Form1()
@@ -24,6 +25,8 @@ namespace ASD_LAB_10
 
         private void start_Click(object sender, EventArgs e)
         {
+            string log = "";
+            string logHit = "";
             clear();
             string pt = pattern.Text;
             string tg = target.Text;
@@ -39,15 +42,18 @@ namespace ASD_LAB_10
                     if (ch == '?')
                     {
                         temp = temp.Replace('?', tg[j]);
+                        log += $"\n {j} : on place of ? lies {tg[j]}";
                     }
                     else 
                     {
                         if (ch == tg[j])
                         {
+                            log += $"\n {j} : match ({tg[j]})";
                             check = true;
                         }
                         else
                         {
+                            log += $"\n {j} : no match\n";
                             check = false;
                             break;
                         }
@@ -57,9 +63,10 @@ namespace ASD_LAB_10
                 }
                 if (check)
                 {
-                    result.Text += $"\nINDEX ({i}) : {temp}";
+                    logHit += $"\nINDEX ({i}) : {temp}";
                 }
             }
+            result.Text += logHit + "\n" + log;
         }
     }
 }
